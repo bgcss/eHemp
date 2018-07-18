@@ -1,0 +1,111 @@
+/* Variables */
+$gray-dark:  #2b2b2b;
+$gray-med:    #ccc;
+$gray-med2:    #999;
+$gray-lt:    #e1e1e1;
+$brand-primary:   #20B66F;
+$blue: #038EC6;
+
+a {
+  color: $blue;
+  &:hover {
+    color: darken( $blue, 10% );
+  }
+}
+.breadcrumb {
+  a {
+    color: $gray-med2;
+    &:hover {
+      color: darken( $gray-med2, 10% );
+    }
+  }
+}
+#spree-header {
+  background-color: #fff;
+  border-bottom: 1px solid $gray-med;
+  margin-bottom: 20px;
+  #header {
+    background: #fff;
+    border-bottom: 1px solid $gray-med;
+    padding: 10px 0 0;
+  }
+  .nav {
+    a {
+      color: $gray-dark;
+      &:hover {
+        color: $brand-primary;
+        background: transparent;
+      }
+    }
+  }
+}
+
+#search-bar {
+  .btn-success {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+    &:hover {
+      background-color: darken( $brand-primary, 10% );
+      border-color: darken( $brand-primary, 10% );
+    }
+  }
+}
+
+.btn-primary {
+  background-color: $gray-dark;
+  border-color: $gray-dark;
+  &:hover {
+    background-color: darken( $gray-dark, 10% );
+    border-color: darken( $gray-dark, 10% );
+  }
+}
+.favorite_link {
+  &.btn-primary {
+    background-color: #fff;
+    border-color: $gray-dark;
+    color: $gray-dark;
+    &:hover {
+      background-color: darken( $gray-dark, 10% );
+      border-color: darken( $gray-dark, 10% );
+      color: #fff;
+    }
+  }
+}
+
+.btn-success {
+  background-color: $brand-primary;
+  border-color: $brand-primary;
+  &:hover {
+    background-color: darken( $brand-primary, 10% );
+    border-color: darken( $brand-primary, 10% );
+  }
+}
+.list-group-item {
+  &.active {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+    &:hover {
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+    &:focus {
+      background-color: $gray-dark;
+      border-color: $gray-dark;
+    }
+  }
+}
+
+.pagination > .active > a,
+.pagination > .active > a:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span,
+.pagination > .active > span:hover,
+.pagination > .active > span:focus {
+    background-color: $brand-primary;
+    border-color: $brand-primary;
+}
+
+.pagination > li > a, .pagination > li > span {
+    color: $brand-primary;
+    border: 1px solid $gray-med;
+}
